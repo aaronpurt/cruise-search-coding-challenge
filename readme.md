@@ -40,7 +40,7 @@ https://qabook.hollandamerica.com/api/cruiseSearch/v1/api/search/itineraries?cou
 ## Default Image: 
 ![alt text](https://qa.hollandamerica.com/images/itineraryMaps/thumb/no_map.jpg)
 
-## Image tile sample
+## Cruise tile sample design
 
 
 ![alt text](https://image.ibb.co/enxBTe/Screen_Shot_2018_10_04_at_2_29_59_PM.png)
