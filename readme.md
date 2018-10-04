@@ -24,8 +24,7 @@ Building a navigation navbar and cruise tiles. Use AngularJS, CSS and HTML. Plea
 	- login button
 
 ## Styling Guidelines
-
-- Use the "Roboto" Google font   
+ 
 - Use the following colors   
 	- Navbar background: #2B386F   
 	- Navbar font: #FFFFFF
