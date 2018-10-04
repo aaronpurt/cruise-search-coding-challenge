@@ -1,9 +1,10 @@
 # Cruise Search Coding Challenge
 
-Building a navigation navbar and cruise tiles. Use AngularJS, CSS and HTML. Please see the sample image below for the tiles. The API will be the data used to populate the cruise tiles. You can start with the code in index.html or create your own project. 
+Building a navigation navbar and cruise tiles. Use AngularJS, CSS and HTML. Please see the sample image below for the tiles. (Feel free make your own tile or follow design below). The API will be the data used to populate the cruise tiles. You can start with the code in index.html or create your own project.
 
 ## Requirements:
 
+- Cruise tile sample: Feel free to make your own or follow design sample below. 
 - Demonstrate use of web standards including HTML5.  
 - Use a separate CSS file.   
 - Make the navbar responsive with at least one breakpoint (your choice as to how it looks on a smaller screen width). 
