@@ -1,4 +1,4 @@
-# Front End Engineering Challenge
+# Cruise Search Coding Challenge
 
 Building a navigation navbar and cruise tiles. Use AngularJS, CSS and HTML. Please see the sample image below for the tiles. The API will be the data used to populate the cruise tiles. You can start with the code in index.html or create your own project. 
 
@@ -16,12 +16,12 @@ Building a navigation navbar and cruise tiles. Use AngularJS, CSS and HTML. Plea
 ## Bonuses
 
 - Use SASS or LESS to pre-compile your CSS.   
-- Add a CSS animation with transitions.  (Loading login component) 
-- Use JavaScript to control whether the login or the logout button is shown; only one should be visible at a time.  
-- Add the login component with
-	- username / password 
-	- labels
-	- login button
+- Add a CSS animation with transitions.  (Loading component) 
+- Use JavaScript to trigger active state room in tile.   
+- Image a separate component
+- (Book now / View Itinerary) buttons open new route path in AngularJS. 
+- Taxes and fees links open in a modal. 
+- 
 
 ## Styling Guidelines
  
@@ -37,6 +37,10 @@ https://qabook.hollandamerica.com/api/cruiseSearch/v1/api/search/itineraries?cou
 - The API returns array of itineraries with 1..n voyages for each itinerary. You can assume you only need the 1st voyage in each itinerary.
 - The API has page/skipping 
 
+## Default Image: 
+![alt text](https://qa.hollandamerica.com/images/itineraryMaps/thumb/no_map.jpg)
 
 ## Image tile sample
+
+
 ![alt text](https://image.ibb.co/enxBTe/Screen_Shot_2018_10_04_at_2_29_59_PM.png)
