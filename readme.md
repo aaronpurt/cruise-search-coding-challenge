@@ -22,7 +22,6 @@ Building a navigation navbar and cruise tiles. Use AngularJS, CSS and HTML. Plea
 - Image a separate component
 - (Book now / View Itinerary) buttons open new route path in AngularJS. 
 - Taxes and fees links open in a modal. 
-- 
 
 ## Styling Guidelines
  
