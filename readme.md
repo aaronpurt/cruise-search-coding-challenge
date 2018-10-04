@@ -12,7 +12,7 @@ Building a navigation navbar and cruise tiles. Use AngularJS, CSS and HTML. Plea
 - Follow the style guidelines listed below.  
 - Make production ready 
 - Clean code
-- Reusable Components best practices 
+- Reusable components best practices 
 
 ## Bonuses
 
