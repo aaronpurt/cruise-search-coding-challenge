@@ -1,17 +1,17 @@
 # Front End Engineering Challenge
 
-Building a navigation and cruise search result tiles. Use CSS, HTML, and AngularJS to develop a responsive navbar. You will also be adding a grid tile  You can start with the code in index.html or create your own project. 
+Building a navigation navbar and cruise tiles. Use AngularJS, CSS and HTML. Please see API below.  Please see the sample image below for the tiles. The API has skip/paging. You can start with the code in index.html or create your own project. 
 
 ## Requirements:
 
 - Demonstrate use of web standards including HTML5.  
 - Use a separate CSS file.   
-- Make the navbar responsive with at least one breakpoint (your choice as to how it looks on a smaller screen width).   
+- Make the navbar responsive with at least one breakpoint (your choice as to how it looks on a smaller screen width). 
 - Using the API 
 - Follow the style guidelines listed below.  
 - Make production ready 
 - Clean code
-- Components best practices 
+- Reusable Components best practices 
 
 ## Bonuses
 
@@ -35,7 +35,7 @@ Building a navigation and cruise search result tiles. Use CSS, HTML, and Angular
 
 ## API with tile data. 
 https://qabook.hollandamerica.com/api/cruiseSearch/v1/api/search/itineraries?country=US&limit=10&skip=0
-- You will notice multiple voyages inside each itinerary array. Feel free to grab the 1st voyage. And have `1` voyage for each itinerary tile. 
+- The API returns array of itineraries with 1..n voyages for each itinerary. You can assume you only need the 1st voyage in each itinerary.
 
 ## Image tile sample
 ![alt text](https://image.ibb.co/enxBTe/Screen_Shot_2018_10_04_at_2_29_59_PM.png)
