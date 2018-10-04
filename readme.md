@@ -1,14 +1,14 @@
 # Front End Engineering Challenge
 
-Building a navigation for a cruise line. Use CSS, HTML, and AngularJS to develop a responsive navbar with login/logout. You can start with the code in index.html or create your own project. 
+Building a navigation and cruise search result tiles. Use CSS, HTML, and AngularJS to develop a responsive navbar. You will also be adding a grid tile  You can start with the code in index.html or create your own project. 
 
 ## Requirements:
 
 - Demonstrate use of web standards including HTML5.  
 - Use a separate CSS file.   
 - Make the navbar responsive with at least one breakpoint (your choice as to how it looks on a smaller screen width).   
+- Using the API 
 - Follow the style guidelines listed below.  
-- Add buttons or links to login/logout.
 - Make production ready 
 - Clean code
 - Components best practices 
@@ -33,3 +33,9 @@ Building a navigation for a cruise line. Use CSS, HTML, and AngularJS to develop
 	- Page background: #FFFFFF    
 	- Default/normal font color: #20285b
 
+## API with tile data. 
+https://qabook.hollandamerica.com/api/cruiseSearch/v1/api/search/itineraries?country=US&limit=10&skip=0
+- You will notice multiple voyages inside each itinerary array. Feel free to grab the 1st voyage. And have `1` voyage for each itinerary tile. 
+
+## Image tile sample
+![alt text](https://image.ibb.co/enxBTe/Screen_Shot_2018_10_04_at_2_29_59_PM.png)
