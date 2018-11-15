@@ -17,37 +17,37 @@
       </div>
     </div>
 
-    <div class="iti-lowest-price col m4 s12">
+    <div class="iti-lowest-price col m4 s12 center-align">
       <p>From</p>
-      <p><strong>US $,1999</strong></p>
-      <p>per person Interior</p>
+      <h5>US $,1999</h5>
+      <p>per person <strong>Interior</strong></p>
       <div class="disclaimer">
         <span><a href="#">*Plus Taxes, Fees, and Port Expenses US$605</a></span>
       </div>
       <button mat-flat-button>VIEW ITINERARY</button>
     </div>
   </section>
+
+  <section class="content state-rooms">
+    <div class="pricing">
+      <div class="single-price">
+        <span>INTERIOR</span>
+        <button mat-flat-button color="primary">$1,499 *</button>
+      </div>
+      <div class="single-price">
+        <span>OCEAN-VIEW</span> <button mat-flat-button>$1,999 *</button>
+      </div>
+
+      <div class="single-price">
+        <span>VISTA-SUITE</span> <button mat-flat-button>$1,999 *</button>
+      </div>
+      <button class="book" mat-flat-button [routerLink]="['book']">
+        Book Now
+      </button>
+    </div>
+
+    <div class="disclaimer">
+      <span><a href="#">*Plus Taxes, Fees, and Port Expenses US$605</a></span>
+    </div>
+  </section>
 </div>
-
-<mat-card class="state-rooms">
-  <div class="pricing">
-    <div class="single-price">
-      <span>INTERIOR</span>
-      <button mat-flat-button color="primary">$1,499 *</button>
-    </div>
-    <div class="single-price">
-      <span>OCEAN-VIEW</span> <button mat-flat-button>$1,999 *</button>
-    </div>
-
-    <div class="single-price">
-      <span>VISTA-SUITE</span> <button mat-flat-button>$1,999 *</button>
-    </div>
-    <button class="book" mat-flat-button [routerLink]="['book']">
-      Book Now
-    </button>
-  </div>
-
-  <div class="disclaimer">
-    <span><a href="#">*Plus Taxes, Fees, and Port Expenses US$605</a></span>
-  </div>
-</mat-card>
