@@ -7,9 +7,10 @@ import { AppRoutingModule } from ".//app-routing.module";
 import { BookingComponent } from "./booking/booking.component";
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
+import { MapComponent } from './map/map.component';
 const AngularMaterial = [MatCardModule, MatButtonModule];
 @NgModule({
-  declarations: [AppComponent, ItinerariesComponent, BookingComponent],
+  declarations: [AppComponent, ItinerariesComponent, BookingComponent, MapComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
