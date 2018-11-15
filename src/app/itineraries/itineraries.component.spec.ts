@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItinariesComponent } from './itinaries.component';
+import { ItinerariesComponent } from './itineraries.component';
 
-describe('ItinariesComponent', () => {
-  let component: ItinariesComponent;
-  let fixture: ComponentFixture<ItinariesComponent>;
+describe('ItinerariesComponent', () => {
+  let component: ItinerariesComponent;
+  let fixture: ComponentFixture<ItinerariesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ItinariesComponent ]
+      declarations: [ ItinerariesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ItinariesComponent);
+    fixture = TestBed.createComponent(ItinerariesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
