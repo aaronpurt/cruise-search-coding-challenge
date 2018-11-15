@@ -41,7 +41,9 @@
     <div class="single-price">
       <span>VISTA-SUITE</span> <button mat-flat-button>$1,999 *</button>
     </div>
-    <button class="book" mat-flat-button routerLink=".">Book Now</button>
+    <button class="book" mat-flat-button [routerLink]="['book']">
+      Book Now
+    </button>
   </div>
 
   <div class="disclaimer">

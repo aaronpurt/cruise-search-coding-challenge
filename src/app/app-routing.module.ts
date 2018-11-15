@@ -4,7 +4,7 @@ import { BookingComponent } from "./booking/booking.component";
 import { ItinerariesComponent } from "./itineraries/itineraries.component";
 const routes: Routes = [
   { path: "", component: ItinerariesComponent },
-  { path: "booking", component: BookingComponent }
+  { path: "book", component: BookingComponent }
 ];
 @NgModule({
   exports: [RouterModule],
