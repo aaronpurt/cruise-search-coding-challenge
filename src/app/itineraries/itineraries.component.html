@@ -1,1 +1,50 @@
-<mat-card>Simple card</mat-card>
+<div class="itinerary">
+  <section class="header">16-DAY South America Passage</section>
+
+  <section class="content">
+    <div class="iti-info">
+      <img src="assets/map.jpeg" alt="default map" width="200px" />
+
+      <ul>
+        <li>
+          <label>DEPARTURE DATE:</label>
+          <span class="departure-date">18 OCT 2018</span>
+        </li>
+        <li><label>SHIP: </label><span>ms Zaandam</span></li>
+        <li><label>DEPARTS: </label><span>San Antonio, Chile</span></li>
+        <li><label>ARRIVES: </label><span>Rio de Janeiro, Brazil</span></li>
+      </ul>
+    </div>
+
+    <div class="iti-lowest-price">
+      <p>From</p>
+      <p><strong>US $,1999</strong></p>
+      <p>per person Interior</p>
+      <div class="disclaimer">
+        <span><a href="#">*Plus Taxes, Fees, and Port Expenses US$605</a></span>
+      </div>
+      <button mat-flat-button>VIEW ITINERARY</button>
+    </div>
+  </section>
+</div>
+
+<mat-card class="state-rooms">
+  <div class="pricing">
+    <div class="single-price">
+      <span>INTERIOR</span>
+      <button mat-flat-button color="primary">$1,499 *</button>
+    </div>
+    <div class="single-price">
+      <span>OCEAN-VIEW</span> <button mat-flat-button>$1,999 *</button>
+    </div>
+
+    <div class="single-price">
+      <span>VISTA-SUITE</span> <button mat-flat-button>$1,999 *</button>
+    </div>
+    <button class="book" mat-flat-button routerLink=".">Book Now</button>
+  </div>
+
+  <div class="disclaimer">
+    <span><a href="#">*Plus Taxes, Fees, and Port Expenses US$605</a></span>
+  </div>
+</mat-card>

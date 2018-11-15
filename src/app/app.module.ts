@@ -6,8 +6,8 @@ import { ItinerariesComponent } from "./itineraries/itineraries.component";
 import { AppRoutingModule } from ".//app-routing.module";
 import { BookingComponent } from "./booking/booking.component";
 import { MatCardModule } from "@angular/material/card";
-
-const AngularMaterial = [MatCardModule];
+import { MatButtonModule } from "@angular/material/button";
+const AngularMaterial = [MatCardModule, MatButtonModule];
 @NgModule({
   declarations: [AppComponent, ItinerariesComponent, BookingComponent],
   imports: [
