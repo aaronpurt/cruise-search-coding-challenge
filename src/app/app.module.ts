@@ -8,9 +8,10 @@ import { BookingComponent } from "./booking/booking.component";
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
 import { MapComponent } from './map/map.component';
+import { ItinerarySingleComponent } from './itinerary-single/itinerary-single.component';
 const AngularMaterial = [MatCardModule, MatButtonModule];
 @NgModule({
-  declarations: [AppComponent, ItinerariesComponent, BookingComponent, MapComponent],
+  declarations: [AppComponent, ItinerariesComponent, BookingComponent, MapComponent, ItinerarySingleComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
