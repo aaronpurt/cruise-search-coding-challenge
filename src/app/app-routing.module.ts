@@ -2,11 +2,11 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { BookingComponent } from "./booking/booking.component";
 import { ItinerariesComponent } from "./itineraries/itineraries.component";
-import { ItinerarySingleComponent } from "./itinerary-single/itinerary-single.component";
+import { ViewItineraryComponent } from "./view-itinerary/view-itinerary.component";
 const routes: Routes = [
   { path: "", component: ItinerariesComponent },
   { path: "book", component: BookingComponent },
-  { path: "itinerary/:id", component: ItinerarySingleComponent }
+  { path: "itinerary/:id", component: ViewItineraryComponent }
 ];
 @NgModule({
   exports: [RouterModule],

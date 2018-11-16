@@ -11,9 +11,10 @@ import { MapComponent } from './map/map.component';
 import { ItinerarySingleComponent } from './itinerary-single/itinerary-single.component';
 import { LowestOptionComponent } from './lowest-option/lowest-option.component';
 import { StateRoomsComponent } from './state-rooms/state-rooms.component';
+import { ViewItineraryComponent } from './view-itinerary/view-itinerary.component';
 const AngularMaterial = [MatCardModule, MatButtonModule];
 @NgModule({
-  declarations: [AppComponent, ItinerariesComponent, BookingComponent, MapComponent, ItinerarySingleComponent, LowestOptionComponent, StateRoomsComponent],
+  declarations: [AppComponent, ItinerariesComponent, BookingComponent, MapComponent, ItinerarySingleComponent, LowestOptionComponent, StateRoomsComponent, ViewItineraryComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

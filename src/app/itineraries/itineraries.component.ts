@@ -7,13 +7,12 @@ import { raw_data } from "src/assets/raw_data";
   styleUrls: ["./itineraries.component.sass"]
 })
 export class ItinerariesComponent implements OnInit {
-  itineraries: [];
+  itineraries = [];
 
   constructor() {}
 
   ngOnInit() {
     console.warn("here: ", raw_data);
-
     this.itineraries = this.getItineraries(raw_data);
     // console.log("first iti :", this.itineraries[0]);
   }
