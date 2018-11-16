@@ -2,7 +2,11 @@
   <div class="pricing">
     <div class="single-price" *ngFor="let room of stateRooms; index as i">
       <span>{{ room.meta }}</span>
-      <button mat-flat-button [ngClass]="{ active: activeRoomIndex == i }">
+      <button
+        (click)="setActiveRoom(i)"
+        mat-flat-button
+        [ngClass]="{ active: activeRoomIndex == i }"
+      >
         {{
           room.priceBlocks[0].prices[0].fare
             | currency: "USD":"symbol-narrow":"4.0-2"

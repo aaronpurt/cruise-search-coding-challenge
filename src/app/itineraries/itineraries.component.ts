@@ -12,8 +12,10 @@ export class ItinerariesComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    console.warn("here: ", raw_data);
+
     this.itineraries = this.getItineraries(raw_data);
-    console.log("first iti :", this.itineraries[0]);
+    // console.log("first iti :", this.itineraries[0]);
   }
 
   getItineraries(raw_data) {

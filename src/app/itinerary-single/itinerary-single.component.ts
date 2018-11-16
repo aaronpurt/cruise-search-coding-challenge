@@ -14,8 +14,10 @@ export class ItinerarySingleComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    console.log("log from single voyage ", this.itinerary);
     const voyage = this.itinerary.voyages[0];
-    console.log("log from single voyage ", voyage);
+
+    console.log("log from single voyage ", this.itinerary);
     this.voyageInfo = this.getFirstVoyageInfo(voyage);
     this.lowestOption = this.getLowestOption(voyage);
     this.stateRooms = this.getStateRooms(voyage);
@@ -44,7 +46,7 @@ export class ItinerarySingleComponent implements OnInit {
 
   getLowestOption(voyage) {
     return {
-      lowestVoyagePrice: 1029
+      lowestVoyagePrice: voyage.lowestVoyagePrice
     };
   }
 

@@ -29,6 +29,10 @@
 
     <!-- lowest option component -->
     <app-lowest-option [lowestOption]="lowestOption"></app-lowest-option>
+
+    <button mat-flat-button [routerLink]="['itinerary', itinerary.itineraryId]">
+      VIEW ITINERARY
+    </button>
   </section>
 
   <!-- state-room component -->

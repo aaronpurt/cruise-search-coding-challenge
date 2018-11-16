@@ -12,4 +12,8 @@ export class StateRoomsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  setActiveRoom(index) {
+    this.activeRoomIndex = index;
+  }
 }
