@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ItinerariesComponent } from "./itineraries/itineraries.component";
 import { AppRoutingModule } from ".//app-routing.module";
 import { BookingComponent } from "./booking/booking.component";
-import { MapComponent } from "./map/map.component";
+import { MapComponent, MapModalComponent } from "./map/map.component";
 import { ItinerarySingleComponent } from "./itinerary-single/itinerary-single.component";
 import { LowestOptionComponent } from "./lowest-option/lowest-option.component";
 import { StateRoomsComponent } from "./state-rooms/state-rooms.component";
@@ -30,7 +30,8 @@ const AngularMaterial = [MatCardModule, MatButtonModule, MatDialogModule];
     StateRoomsComponent,
     ViewItineraryComponent,
     TaxesComponent,
-    DialogOverviewExampleDialog
+    DialogOverviewExampleDialog,
+    MapModalComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +42,10 @@ const AngularMaterial = [MatCardModule, MatButtonModule, MatDialogModule];
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [TaxesComponent, DialogOverviewExampleDialog]
+  entryComponents: [
+    TaxesComponent,
+    DialogOverviewExampleDialog,
+    MapModalComponent
+  ]
 })
 export class AppModule {}

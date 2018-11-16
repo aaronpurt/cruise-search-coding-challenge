@@ -10,9 +10,9 @@ export class MapComponent {
   constructor(public dialog: MatDialog) {}
 
   openMapModal(): void {
-    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+    const dialogRef = this.dialog.open(MapModalComponent, {
       width: "80%",
-      height: "400px"
+      height: "80%"
     });
 
     dialogRef.afterClosed().subscribe(result => {});
@@ -23,9 +23,9 @@ export class MapComponent {
   selector: "map-modal",
   templateUrl: "map-modal.html"
 })
-export class DialogOverviewExampleDialog {
+export class MapModalComponent {
   constructor(
-    public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
+    public dialogRef: MatDialogRef<MapModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data
   ) {}
 
