@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { raw_data } from "src/assets/raw_data";
+import { ApiService } from "../services/api.service";
 
 @Component({
   selector: "app-itineraries",
@@ -9,18 +9,33 @@ import { raw_data } from "src/assets/raw_data";
 export class ItinerariesComponent implements OnInit {
   itineraries = [];
 
-  constructor() {}
+  constructor(private apiService: ApiService) {}
 
   ngOnInit() {
-    console.warn("here: ", raw_data);
+    // Todo: Disable CORS
+    // Test with API call
+    // this.apiService.getData().subscribe(
+    //   res => {
+    //     console.log("resp from api: ", res);
+    //     this.itineraries = this.getItineraries(res);
+    //   },
+    //   err => {
+    //     console.error(err);
+    //     console.warn("NEED TO disable cors on the server");
+    //   }
+    // );
+
+    const raw_data = this.apiService.getRawData();
     this.itineraries = this.getItineraries(raw_data);
-    // console.log("first iti :", this.itineraries[0]);
+    // console.log(this.itineraries);
   }
 
-  getItineraries(raw_data) {
-    const data = raw_data.data[0];
+  getItineraries(response) {
+    const data = response.data[0];
     if (data && data.attributes && data.attributes.itineraries) {
-      return data.attributes.itineraries;
+      // use only the first 5 itineraries for sample data,
+      // since other itineraries are missing fare /or need more validation
+      return data.attributes.itineraries.slice(0, 5);
     }
     console.log("Invalid data");
     return null;

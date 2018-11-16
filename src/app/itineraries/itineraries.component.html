@@ -1,10 +1,10 @@
-<!--
-  <div *ngFor="let itinerary of itineraries">
-    <app-itinerary-single [itinerary]="itinerary"></app-itinerary-single>
-  </div>
--->
+<div *ngFor="let itinerary of itineraries">
+  <app-itinerary-single [itinerary]="itinerary"></app-itinerary-single>
+</div>
 
-<app-itinerary-single
-  *ngIf="itineraries.length > 0"
-  [itinerary]="itineraries[0]"
-></app-itinerary-single>
+<!--
+  <app-itinerary-single
+    *ngIf="itineraries.length > 0"
+    [itinerary]="itineraries[0]"
+  ></app-itinerary-single>
+-->

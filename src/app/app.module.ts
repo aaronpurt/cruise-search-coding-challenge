@@ -14,7 +14,7 @@ import {
   TaxesComponent,
   DialogOverviewExampleDialog
 } from "./taxes/taxes.component";
-
+import { HttpClientModule } from "@angular/common/http";
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDialogModule } from "@angular/material/dialog";
@@ -36,6 +36,7 @@ const AngularMaterial = [MatCardModule, MatButtonModule, MatDialogModule];
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    HttpClientModule,
     ...AngularMaterial
   ],
   providers: [],
