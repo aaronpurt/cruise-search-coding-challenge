@@ -1,0 +1,21 @@
+<section class="content state-rooms">
+  <div class="pricing">
+    <div class="single-price" *ngFor="let room of stateRooms; index as i">
+      <span>{{ room.meta }}</span>
+      <button mat-flat-button [ngClass]="{ active: activeRoomIndex == i }">
+        {{
+          room.priceBlocks[0].prices[0].fare
+            | currency: "USD":"symbol-narrow":"4.0-2"
+        }}
+        *
+      </button>
+    </div>
+    <button class="book" mat-flat-button [routerLink]="['book']">
+      Book Now
+    </button>
+  </div>
+  <br />
+  <div class="disclaimer center-align">
+    <span><a href="#">*Plus Taxes, Fees, and Port Expenses US$605</a></span>
+  </div>
+</section>

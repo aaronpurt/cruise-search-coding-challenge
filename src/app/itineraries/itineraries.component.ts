@@ -12,14 +12,12 @@ export class ItinerariesComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.log(raw_data);
-
     this.itineraries = this.getItineraries(raw_data);
+    console.log("first iti :", this.itineraries[0]);
   }
 
   getItineraries(raw_data) {
     const data = raw_data.data[0];
-    console.log(data);
     if (data && data.attributes && data.attributes.itineraries) {
       return data.attributes.itineraries;
     }

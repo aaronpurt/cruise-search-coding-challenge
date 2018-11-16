@@ -9,9 +9,11 @@ import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
 import { MapComponent } from './map/map.component';
 import { ItinerarySingleComponent } from './itinerary-single/itinerary-single.component';
+import { LowestOptionComponent } from './lowest-option/lowest-option.component';
+import { StateRoomsComponent } from './state-rooms/state-rooms.component';
 const AngularMaterial = [MatCardModule, MatButtonModule];
 @NgModule({
-  declarations: [AppComponent, ItinerariesComponent, BookingComponent, MapComponent, ItinerarySingleComponent],
+  declarations: [AppComponent, ItinerariesComponent, BookingComponent, MapComponent, ItinerarySingleComponent, LowestOptionComponent, StateRoomsComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
