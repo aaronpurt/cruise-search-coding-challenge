@@ -1,0 +1,46 @@
+<div class="itinerary">
+  <section class="header">{{ voyageInfo.itinerary.description }}</section>
+
+  <section class="content row">
+    <div class="iti-info col m8">
+      <div class="row">
+        <app-map class="col s12 m6"></app-map>
+        <ul class="col s12 m6">
+          <li>
+            <label>DEPARTURE DATE: </label>
+            <span class="departure-date">{{
+              voyageInfo.dateDepart | date
+            }}</span>
+          </li>
+          <li>
+            <label>SHIP: </label><span>{{ voyageInfo.ship.displayName }}</span>
+          </li>
+          <li>
+            <label>DEPARTS: </label
+            ><span>{{ voyageInfo.disembarkPort.portName }}</span>
+          </li>
+          <li>
+            <label>ARRIVES: </label
+            ><span>{{ voyageInfo.destination[0].name }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- lowest option component -->
+    <app-lowest-option [lowestOption]="lowestOption"></app-lowest-option>
+
+    <div class="center-align">
+      <button
+        id="btn-view-iti"
+        mat-flat-button
+        [routerLink]="['itinerary', itinerary.itineraryId]"
+      >
+        VIEW ITINERARY
+      </button>
+    </div>
+  </section>
+
+  <!-- state-room component -->
+  <app-state-rooms [stateRooms]="stateRooms"></app-state-rooms>
+</div>
