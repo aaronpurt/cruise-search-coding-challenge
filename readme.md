@@ -38,7 +38,7 @@ https://qabook.hollandamerica.com/api/cruiseSearch/v1/api/search/itineraries?cou
 - The API has page/skipping 
 
 ## Default Image: 
-![alt text](https://qa.hollandamerica.com/images/itineraryMaps/thumb/no_map.jpg)
+![alt text](https://www.hollandamerica.com/content/dam/hal/inventory-assets/defaultmap/hal_default_map.jpg.image.588.656.medium.jpg)
 
 ## Cruise tile sample design
 
